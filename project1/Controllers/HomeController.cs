@@ -18,6 +18,13 @@ namespace project1.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult Index()
         {
             return View();
